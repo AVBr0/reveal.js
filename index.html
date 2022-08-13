@@ -16,8 +16,76 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>What is WebGL and why we using Three.js?</section>
+				<section>
+					<p><a href="https://bruno-simon.com">https://bruno-simon.com</a></p>
+					<p><a href="https://richardmattka.com">https://richardmattka.com</a></p>
+					<p><a href="https://www.oculus.com/medal-of-honor/">https://www.oculus.com/medal-of-honor/</a></p>
+					<p><a href="https://prior.co.jp/discover">https://prior.co.jp/discover</a></p>
+					<p><a href="https://chartogne-taillet.com">https://chartogne-taillet.com</a></p>
+				</section>
+				<section>WHAT IS WEBGL?</section>
+				<section>
+					<ul>
+						<li>JavaScript API</li>
+						<li>Renders triangles at a remarkable speed</li>
+						<li>Result can be drawn in a &lt;canvas&gt;</li>
+						<li>Compatible with most modern browsers</li>
+						<li>Uses the Graphic Processing Unit (GPU)</li>
+					</ul>
+				</section>
+				<section>
+					<p>The CPU can do calculations really fast but one by one</p>
+					<p>The GPU is a little slower but can do thousands of parallel calculations</p>
+				</section>
+				<section>To draw a 3D model, the idea is to draw many triangles at the right position and colorize them so that they look the way we want</section>
+				<section>The GPU will position all those points at once according to many factors</section>
+				<section>
+					<p>Once the points are placed, the GPU will draw each visible pixel of those triangles.</p>
+					<p>Again, those thousands of pixels will be calculated and drawn in parallel extremely fast.</p>
+				</section>
+				<section>
+					<p>The instructions to place the points and draw the pixels are written in shaders.</p>
+					<p>They contain a lot of instructions like the points positions, model transformations, the camera</p>
+					<p>coordinates and things get positions and colorized the way we want.</p>
+				</section>
+				<section>
+					<p>And this is why native WebGL is so hard.</p>
+					<p>Drawing a single triangle on the canvas would take at least 100 lines of code. </p>
+				</section>
+				<section>Three.js to the rescue</section>
+				<section>
+					<ul>
+					  <li>JavaScript library</li>
+					  <li>MIT license</li>
+					  <li>Right above WebGL</li>
+					  <li>Creator: Ricardo Cabello, aka Mr.doob</li>
+				    </ul>
+				</section>
+				<section>Three.js drastically simplify the process of all of this</section>
+				<section>We can still interact with the WebGL and we can create our own shader and provide our own information</section>
+				<section>
+					<p>Currently, the library gets an update every month and you can see what's changed in the releases page here:</p>
+					<a href="https://github.com/mrdoob/three.js/releases">https://github.com/mrdoob/three.js/releases</a>
+				</section>
+				<section>
+					<p>You can discover many exceptional projects using Three.js on the website's homepage:</p>
+					<a href="https://threejs.org/">https://threejs.org/</a>
+				</section>
+				<section>
+					<p>There is also some well-maintained documentation that we will use a lot:</p>
+					<a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene">https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene</a>
+				</section>
+				<section>
+					<p>You can find hundreds of examples with public code here:</p>
+					<a href="https://threejs.org/examples/#webgl_tonemapping">https://threejs.org/examples/#webgl_tonemapping</a>
+				</section>
+				<section>
+					<p>Three.js is the most popular WebGL library for good reasons that we already covered.</p>
+					<p>It's very stable, it provides many features, the documentation is remarkable, the community is working hard on updates, and it's still close enough to native WebGL.</p>
+					<p>That's why it's probably better to learn Three.js.</p>
+					<p>But there are many other libraries, and some of them are amazing as well. Be curious, try them out</p>
+				</section>
 			</div>
 		</div>
 
